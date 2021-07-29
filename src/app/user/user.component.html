@@ -1,0 +1,8 @@
+<p>
+  <b>ID:</b> {{user.id}},<br>
+  <b>Name:</b> {{user.name}},<br>
+  <b>Username:</b> {{user.username}},<br>
+  <b>Phone:</b> {{user.phone}}.<br>
+</p>
+<button (click)="toUserDetails()">Details</button><br/>
+<a routerLink="/users/{{user.id}}">Details</a>

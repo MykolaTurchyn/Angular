@@ -1,0 +1,8 @@
+<p>
+  <b>UserID:</b> {{post.userId}},<br>
+  <b>ID:</b> {{post.id}},<br>
+  <b>Title:</b> {{post.title}},<br>
+  <b>Body:</b> {{post.body}},<br>
+</p>
+<button (click)="toPostDetails()">Details</button><br/>
+<a routerLink="/posts/{{post.id}}">Details</a>
