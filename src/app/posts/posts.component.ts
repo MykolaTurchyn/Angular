@@ -13,7 +13,6 @@ export class PostsComponent implements OnInit {
   posts: IPost[];
 
   constructor(private postsService: PostsService) {
-
   }
 
   ngOnInit(): void {

@@ -1,0 +1,15 @@
+<div class="color">
+  <p>
+    <b> ID:</b> <i>{{user?.id}},</i><br>
+    <b> Name:</b> <i>{{user?.name}},</i><br>
+    <b> Username:</b> <i>{{user?.username}},</i><br>
+    <b> Phone:</b> <i>{{user?.phone}},</i><br>
+    <b> Email:</b> <i>{{user?.email}}.</i><br>
+    <b> Street:</b> <i>{{user.address?.street}}.</i><br>
+    <b> Suite:</b> <i>{{user.address?.suite}}.</i><br>
+    <b> City:</b> <i>{{user.address?.city}}.</i><br>
+    <b> Zipcode:</b> <i>{{user.address?.zipcode}}.</i><br>
+  </p>
+  <small>If no data, please go back and try again.</small><br>
+  <button (click)="goBack()">Back</button>
+</div>
