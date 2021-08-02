@@ -4,5 +4,5 @@
   <b>Title:</b> <i>{{post.title}}</i>,<br>
 </p>
 <button (click)="goToPDetails()">details</button><br>
-<a routerLink="{{this.post}}" [state]="post">details1</a><br>
-<a [routerLink]="['{{this.post}}']" [state]="post">details2</a>
+<a routerLink="{{post.id}}" [state]="post">details1</a><br>
+<a [routerLink]="['{{post.id}}']" [state]="post">details2</a>
