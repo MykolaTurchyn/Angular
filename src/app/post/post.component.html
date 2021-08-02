@@ -3,4 +3,6 @@
   <b>Body:</b> <i>{{post.body}}</i>,<br>
   <b>Title:</b> <i>{{post.title}}</i>,<br>
 </p>
-<button (click)="goToPDetails()">details</button>
+<button (click)="goToPDetails()">details</button><br>
+<a routerLink="{{this.post}}" [state]="post">details1</a><br>
+<a [routerLink]="['{{this.post}}']" [state]="post">details2</a>

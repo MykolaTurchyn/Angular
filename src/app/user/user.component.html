@@ -5,4 +5,7 @@
   <b>Phone:</b> <i> {{user.phone}}</i>,<br>
   <b>Email:</b> <i> {{user.email}}</i>.
 </p>
-<button (click)="goToUDetails()">Details</button>
+<button (click)="goToUDetails()">Details</button><br>
+<a [routerLink]="[user.id]" [state]="user">details1</a><br>
+<a routerLink="{{user.id}}" [state]="user">details2</a>
+
