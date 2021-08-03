@@ -1,0 +1,9 @@
+<p>form works!</p>
+<form (ngSubmit)="click()">
+  <select>
+    <option *ngFor="let user of users">
+      {{user.name}}{{user.username}}
+    </option>
+  </select>
+  <button>CLICK</button>
+</form>
